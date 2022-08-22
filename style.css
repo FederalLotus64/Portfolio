@@ -36,22 +36,26 @@ header h1 {
 }
 
 .dropdown {
-    margin: 8px;
-    border-radius: 8px;
-    width: 256px;
+    width: 100vw;
+    height: calc(100vh - 64px);
     display: none;
-    position: absolute;
     top: 64px;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+.links {
+    margin: auto;
+}
+
 .dropdown a {
-    width: 256px;
-    height: 64px;
+    margin: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 /* Main */
@@ -190,6 +194,10 @@ header h1 {
 
 .info h1 {
     margin: 32px 0;
+}
+
+.info p {
+    margin-bottom: 32px;
 }
 
 .line {
