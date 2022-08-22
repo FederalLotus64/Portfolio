@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/main.js"></script>
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">(function(){emailjs.init("PUBLIC_KEY");})();</script>-->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <img src="images/menu.png" alt="Menu Icon">
+        <div class="dropdown">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <h1>Felix Widström</h1>
+    </header>
+    <main class="contact">
+        <div class="info">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <h1>Felix Widström</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam sit, minus repellendus provident atque repudiandae ipsam repellat fugiat quae distinctio optio eligendi? Perferendis eligendi, facere perspiciatis magnam velit accusamus autem?</p>
+        </div>
+        <div class="line"></div>
+        <div class="form">
+            <form onsubmit="Send(); return false" id="emailform">
+                <input type="text" name="name" placeholder="Name:" required>
+                <input type="tel" name="phone" placeholder="Phone number:" required>
+                <input type="email" name ="email" placeholder="E-mail:" required>
+                <textarea name="msg" placeholder="Message:" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
