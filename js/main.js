@@ -1,4 +1,5 @@
-let images = ["images/placeholder.png", "images/placeholder.png", "images/placeholder.png"];
+let images = ["images/3D-viewer.png", "images/placeholder.png", "images/placeholder.png"];
+let links = ["https://federallotus64.github.io/3D-Viewer/"];
 let dots = document.querySelectorAll(".dot");
 let active = 0;
 let items;
@@ -8,7 +9,9 @@ if (document.querySelector(".showcase")) {
     dots[active].classList.toggle("active");
     items[0].style.backgroundImage = "none";
     items[1].style.backgroundImage = "url(" + images[0] + ")";
+    items[1].href = links[0];
     items[2].style.backgroundImage = "url(" + images[1] + ")";
+    items[2].href = links[1];
 }
 
 window.onclick = (e) => {
@@ -27,6 +30,9 @@ window.onclick = (e) => {
         items[0].style.backgroundImage = "url(" + images[active-1] + ")";
         items[1].style.backgroundImage = "url(" + images[active] + ")";
         items[2].style.backgroundImage = "url(" + images[active+1] + ")";
+        items[0].href = links[active-1]
+        items[1].href = links[active];
+        items[2].href = links[active+1];
     } else if (e.target == document.querySelectorAll(".arrow")[1] && active < (dots.length - 1)) {
         dots[active].classList.remove("active");
         active++;
@@ -34,6 +40,9 @@ window.onclick = (e) => {
         items[0].style.backgroundImage = "url(" + images[active-1] + ")";
         items[1].style.backgroundImage = "url(" + images[active] + ")";
         items[2].style.backgroundImage = "url(" + images[active+1] + ")";
+        items[0].href = links[active-1]
+        items[1].href = links[active];
+        items[2].href = links[active+1];
     }
 
     if (e.target == document.querySelector("form input[type='submit']")) {

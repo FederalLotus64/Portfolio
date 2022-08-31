@@ -119,6 +119,11 @@ header h1 {
     position: absolute;
 }
 
+.showcase a, .showcase2 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .itemLeft {
     width: 512px;
     height: 288px;
