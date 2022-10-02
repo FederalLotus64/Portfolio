@@ -207,8 +207,23 @@ header h1 {
     margin: auto;
     width: 80%;
     height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(images/placeholder.png);
     background-size: cover;
+}
+
+.showcase2 a div {
+    padding: 16px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    background-color: black;
 }
 
 .contact {
