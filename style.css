@@ -258,6 +258,11 @@ header h1 {
     margin-bottom: 32px;
 }
 
+.info a {
+    color: blue;
+    text-decoration: none;
+}
+
 .line {
     margin: auto;
     width: 100%;
