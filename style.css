@@ -45,6 +45,13 @@ header h1 {
     color: white;
 }
 
+header a {
+    margin: auto 32px auto auto;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
 .dropdown {
     width: 100vw;
     height: calc(100vh - 64px);
