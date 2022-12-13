@@ -203,9 +203,10 @@ header a {
 
 .showcase2 {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: calc(100vw/(16/3));
     width: 100%;
-    height: 2304px;
+    height: auto;
     top: 704px;
     position: absolute;
 }
@@ -263,11 +264,6 @@ header a {
 
 .info p {
     margin-bottom: 32px;
-}
-
-.info a {
-    color: blue;
-    text-decoration: none;
 }
 
 .line {
